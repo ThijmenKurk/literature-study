@@ -1,0 +1,52 @@
+\section{Conclusion}\label{sec:conclusion}
+\todo{Conclusion of your investigation, including (i) few sentence to introduce the topic considered, (ii) short summary of the research method followed, (iii) main findings, and (iv) potential implications and future work}
+This study gives an overview of modern microservice architectures in the form of a model and identified three data management challenges and their potential solutions by systematically analyzing the latest studies on microservices using well-known literature review methods \cite{syslit1, syslit2,syslit3,syslit4}.
+
+We found that microservices consist of four layers: (i) Runtime, (ii) Communication, (iii) Coordination and (iv) Logic, with one overarching layer being Security. These microservices are connected with each other to form a microservice architecture. There are four types of microservices: (i) Business, (ii) Utility, (iii) Persistence and (iv) Middleware. Additionally, we found three data management challenges: (i) inter-microservice data relations, (ii) inter-microservice data transactions and (iii) inter-microservice query aggregation and joining. We conclude that microservice architectures are evolving but that they are far from mature, given the fact that not all data management challenges have general solutions.
+
+In the future we would like to explore how to solve the challenge described in Section~\ref{sec:foreign} by proposing a general solution for this problem.
+
+
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{bibliography}
+
+
+\begin{figure}
+    \ul{\texttt{TITLE("microservice?") AND (TITLE("architecture") OR (TITLE("data") AND (TITLE("coordination") OR TITLE("management"))))}} \texttt{ AND (LIMIT-TO(PUBSTAGE, "final")) AND (LIMIT-TO(DOCTYPE, "cp") OR LIMIT-TO(DOCTYPE, "ar") OR LIMIT-TO(DOCTYPE, "ch")) AND (LIMIT-TO(SUBJAREA, "COMP")) AND (LIMIT-TO(LANGUAGE, "English")) AND (EXCLUDE(EXACTKEYWORD, "Internet Of Things") OR EXCLUDE(EXACTKEYWORD, "Network Architecture"))}
+    \caption{\ul{The initial search string} and the refined search string after the filtering process}
+    \label{fig:search-string-refined}
+\end{figure}
+
+
+\begin{table*}[!t]
+    \begin{tabular}{llp{3in}p{2in}r}
+        \toprule
+        {} & \textbf{Document Type} & \textbf{Title}                                                                                      & \textbf{Authors}                                                                                    & \textbf{Year} \\
+        \midrule
+        1  & Article                & Performance Analysis of Choreography and Orchestration in Microservices Architecture                & Kristianto, H., Zahra, A.                                                                           & 2021          \\
+        2  & Conference Paper       & Data management in microservices: State of the practice, challenges, and research directions        & Laigner, R., Zhou, Y., Salles, M.A.V., Liu, Y., Kalinowski, M.                                      & 2021          \\
+        3  & Conference Paper       & Microservices: Architecture, container, and challenges                                              & Liu, G., Huang, B., Liang, Z., Qin, M., Zhou, H., Li, Z.                                            & 2020          \\
+        4  & Conference Paper       & A logical architecture design method for microservices architectures                                & Santos, N., Salgado, C.E., Morais, F., Melo, M., Silva, S., Martins, R., Pereira, M., Rodrigues,... & 2019          \\
+        5  & Conference Paper       & A Comparative Review of Microservices and Monolithic Architectures                                  & Al-Debagy, O., Martinek, P.                                                                         & 2018          \\
+        6  & Conference Paper       & Towards a taxonomy of microservices architectures                                                   & Garriga, M.                                                                                         & 2018          \\
+        7  & Conference Paper       & Leveraging microservices architecture by using Docker technology                                    & Jaramillo, D., Nguyen, D.V., Smart, R.                                                              & 2016          \\
+        8  & Conference Paper       & A systematic mapping study in microservice architecture                                             & Alshuqayran, N., Ali, N., Evans, R.                                                                 & 2016          \\
+        9  & Conference Paper       & Microservices: A systematic mapping study                                                           & Pahl, C., Jamshidi, P.                                                                              & 2016          \\
+        10 & Article                & The pains and gains of microservices: A Systematic grey literature review                           & Soldani, J., Tamburri, D.A., Van Den Heuvel, W.-J.                                                  & 2018          \\
+        11 & Article                & Microservices Patterns                                                                              & Richardson, C.                                                                                      & 2018          \\
+        12 & Article                & Microservices: Yesterday, today, and tomorrow                                                       & Dragoni, N., Giallorenzo, S., Lafuente, A.L., Mazzara, M., Montesi, F., Mustafin, R., Safina, L.    & 2016          \\
+        13 & Conference Paper       & Architectural patterns for microservices: A systematic mapping study                                & Taibi, D., Lenarduzzi, V., Pahl, C.                                                                 & 2018          \\
+        14 & Article                & The Design and Architecture of Microservices                                                        & Sill, A.                                                                                            & 2016          \\
+        15 & Conference Paper       & The database-is-the-service pattern for microservice architectures                                  & Messina, A., Rizzo, R., Storniolo, P., Tripiciano, M., Urso, A.                                     & 2016          \\
+        16 & Article                & Performance Analysis of Microservice Design Patterns                                                & Akbulut, A., Perros, H.G.                                                                           & 2019          \\
+        17 & Conference Paper       & Microservices architecture: Challenges and proposed conceptual design                               & Munaf, R.M., Ahmed, J., Khakwani, F., Rana, T.                                                      & 2019          \\
+        18 & Article                & Microservices from theory to practices                                                              & Daya, S.                                                                                            & 2015          \\
+        19 & Conference Paper       & Event Oriented vs Object Oriented Analysis for Microservice Architecture: An Exploratory Case Study & Unlu, H., Tenekeci, S., Yildiz, A., Demirors, O.                                                    & 2021          \\
+        20 & Article                & Architecting with microservices: A systematic mapping study                                         & Di Francesco, P., Lago, P., Malavolta, I.                                                           & 2019          \\
+        21 & Conference Paper       & A systematic mapping study on microservices                                                         & Hamzehloui, M.S., Sahibuddin, S., Salah, K.                                                         & 2019          \\
+        \bottomrule
+    \end{tabular}
+    \caption{Selected studies}
+    \label{table:selected-studies}
+\end{table*}

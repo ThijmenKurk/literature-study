@@ -1,0 +1,21 @@
+\section{Introduction}
+\todo{Present the topic of the literature review, including background of research field, goal, methodology, and contribution of the paper (e.g., map of the state of the art, reusable classification approach, evaluation of results, discussion of results, and target audience)}
+
+Nowadays, microservices are the norm when software engineering scalable applications, especially considering that cloud computing and containerization technologies are becoming more prominent \cite{Jaramillo2016,Liu2020629,Akbulut201919}. Amazon, Netflix, LinkedIn, Spotify, SoundCloud and other companies \cite{7333476,Yahia20163, DiFrancesco201977} are actively adopting and evolving architectures in which microservices are deployed. The first definition of a microservice was introduced by \cite{martinfowler2014microservices} in 2014 as: \textit{'A service that can be automatically and independently be deployed, runs in its own process and communicates using lightweight mechanisms'}. Complementary to this definition, \cite{martinfowler2014microservices} specifies a microservice architecture (MSA) to be a collection of microservices working together towards desired business objectives.
+
+The \textbf{goal} of this paper is to analyze published literature on MSAs and classify them. This classification will be done by iteratively creating a model using the definition of, and patterns in MSAs. Additional to this goal we zoom in on inter-microservice data management and classify problems and solutions commonly found therein.
+
+The \textbf{audience} of this study are researchers, software engineers and developers who are interested in microservices or are inquisitive about the current state of inter-microservice data management.
+
+The \textbf{outline} of this paper is as follows, Section~\ref{sec:related_work} discusses the relevant work we have found and how our research fits into this picture. Subsequently, Section~\ref{sec:design} goes into detail on how our systematic literature review is designed. Followed by Section~\ref{sec:results} where we define the model and answer our research questions based on the selected literature. Next, in Section~\ref{sec:discussion} we discuss the results. And finally in Section~\ref{sec:threats} and Section~\ref{sec:conclusion} we cover common threats to validity and conclude our study respectively.
+
+To simplify to model used in Section~\ref{sec:results}, we choose to use the following definition of microservices (Definition~\ref{def:ms}) and MSAs (Definition~\ref{def:msa}) both originating from \cite{Garriga2018203}, where a process can be either be a process as defined by the operating system (OS) or a collection of threads within an OS process. These definitions generalize better and allow us to define a model that contains less edge cases. For example, using these definitions we can define services used for persistence to be microservices as well, although they do not directly implement logic towards any business objective. Additionally, we use the term service and microservice interchangeably in this paper.
+
+
+\begin{definition}[Microservice, MS]\label{def:ms}
+    A microservice is a cohesive independent process interacting via messages.
+\end{definition}
+
+\begin{definition}[Microservice Architecture, MSA]\label{def:msa}
+    A microservice architecture is a distributed application where all its modules are microservices.
+\end{definition}
